@@ -1,1 +1,85 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;;
+}
+
+main{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+footer{
+    background-color:gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.tarjeta{     
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:420px;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    font-family: sans-serif;
+
+}
+
+.titulo{
+     font-size: 24px;
+     padding: 10px 10px 0 10px;;
+}
+
+.cuerpo{
+     padding: 10px;
+    }
+
+.pie{
+     background: #6699ff;
+     border-radius:0 0 15px 15px;
+     padding: 10px;
+     text-align:center;
+}
+.pie button{
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #111;
+    background-color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px){
+    .tarjeta-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .tarjeta-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .texto-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
+
 
